@@ -35,7 +35,7 @@ public class PhotoActivity extends Activity {
 
     private ImageView photo;
 
-    private ImageButton closeBtn;
+    //private ImageButton closeBtn;
     private ImageButton shareBtn;
     private ProgressBar loadingBar;
 
@@ -78,12 +78,12 @@ public class PhotoActivity extends Activity {
         loadImage();
 
         // Set Button Listeners
-        closeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+//         closeBtn.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View v) {
+//                 finish();
+//             }
+//         });
 
         shareBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,7 +113,7 @@ public class PhotoActivity extends Activity {
      */
     private void findViews() {
         // Buttons first
-        closeBtn = (ImageButton) findViewById(getApplication().getResources().getIdentifier("closeBtn", "id", getApplication().getPackageName()));
+        //closeBtn = (ImageButton) findViewById(getApplication().getResources().getIdentifier("closeBtn", "id", getApplication().getPackageName()));
         shareBtn = (ImageButton) findViewById(getApplication().getResources().getIdentifier("shareBtn", "id", getApplication().getPackageName()));
 
         //ProgressBar
